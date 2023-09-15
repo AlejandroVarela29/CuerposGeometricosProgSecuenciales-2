@@ -3,7 +3,7 @@ public class App3{
 
     public static void main(String args[]){
 
-        byte elegir, intentoMaximo = 3, intentos = 0, nLados;
+        byte elegir, intentoMaximo = 3, intentos = 1, nLados;
         double  altura = 0,  radio = 0, areaLateral = 0, area=0, areaHusoEsferico=0, volumenCasqueteEsferico=0, diagonal = 0,volumenCunaEsferica=0, volumenZonaEsferica=0, volumen=0, areaTotal=0, areaZonaEsferica=0;
         double generatriz,  aristas, numeroDeGrados,  apotemaBaseb, aBaseMayor,aBaseMenor,apotemaBaseMenor,radioMayor, radioMenor,bBaseMayor,bBaseMenor,pBaseMayor,pBaseMenor,apotemaTroncoPiramide, pBase, aBase , base, cara, apotema, apotemaPiramide, perimetro,alfa,largo, apotemaBaseMayor;
     
@@ -33,11 +33,11 @@ public class App3{
             switch (elegir) {
                 case 1:
                     
-              System.out.println("Se realizaran los calculos de un cilindro");
+              System.out.println("Se le presentaran las siguientes opciones para el calculo de un cilindro ");
               System.out.println("");
               
               System.out.println("No se puede ingresar valores negativos");                      
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
 
               System.out.println("");
                       
@@ -102,6 +102,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -125,7 +126,7 @@ public class App3{
               System.out.println("Se Realizaran los calculos de un cono");
               System.out.println("");
 
-               while(intentos<intentoMaximo){
+               while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area lateral de un cono");
               System.out.println("para ello se necesita la base de p ");
               System.out.println("tambien se necesitan datos adicionales comno lo son el radio y la altura");
@@ -181,6 +182,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -205,7 +207,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de un dodecaedro");
               System.out.println("");
 
-              while(intentos<intentoMaximo){  
+              while(intentos<=intentoMaximo){  
               System.out.println("Se calculara el area de un dodecaedro");
 
               System.out.println("");
@@ -232,6 +234,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
                intentos++;
@@ -255,7 +258,7 @@ public class App3{
             System.out.println("");
             
 
-            while(intentos<intentoMaximo){  
+            while(intentos<=intentoMaximo){  
             System.out.println("Se calculara el area de una esfera");
 
             System.out.println("");
@@ -284,6 +287,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -307,7 +311,7 @@ public class App3{
             System.out.println("Se realizaran los calculos de una parte de la esfera");
             System.out.println("");
 
-            while(intentos<intentoMaximo){  
+            while(intentos<=intentoMaximo){  
             System.out.println("Se calculara el area de una zona esferica");
     
             System.out.println("cual es el radio");
@@ -352,6 +356,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
                intentos++;
@@ -377,7 +382,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de ua parte de la esfera");
               System.out.println("");
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el huso esferico ");
 
               System.out.println("");
@@ -412,6 +417,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -435,7 +441,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de un hexaedro");
               System.out.println("");
 
-               while(intentos<intentoMaximo){
+               while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area de un hexaedro");
 
               System.out.println("");
@@ -472,6 +478,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -497,7 +504,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de un icosaedro");
               System.out.println("");
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area de icoseadro");
 
               System.out.println("");
@@ -524,6 +531,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -548,7 +556,7 @@ public class App3{
               System.out.println("Se realizara los calculos de un octoaedro");
               System.out.println("");
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area de un octaedro");
 
               System.out.println("");
@@ -575,6 +583,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
              intentos++;
@@ -596,7 +605,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de un ortoaedro");
               System.out.println("");
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area de un ortoedro");
 
               System.out.println("");
@@ -657,6 +666,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -683,7 +693,7 @@ public class App3{
               System.out.println("Se realizara los calculos de una piramide"); 
               System.out.println(""); 
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area lateral de una piramide");
 
               System.out.println(""); 
@@ -737,6 +747,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -764,7 +775,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de un prisma");
               System.out.println("");
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area lateral de un prisma");
 
 
@@ -818,6 +829,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -844,7 +856,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de un tetraedro");
               System.out.println("");
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area del tetraedro");
 
               System.out.println("Se realizaran los calculos de un tetraedro");
@@ -883,6 +895,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -891,6 +904,7 @@ public class App3{
               if(intentos == intentoMaximo){
                 
               System.out.println("Ah utilizado todos sus intentos");
+              System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
             }else{
 
              System.out.println("El area del tetraedo es " + area);
@@ -907,7 +921,7 @@ public class App3{
               System.out.println("Se realizaran los calculos de un tronco Cono");
               System.out.println("");
 
-              while(intentos<intentoMaximo){
+              while(intentos<=intentoMaximo){
               System.out.println("Se calculara el area lateral del tronco de un cono");
 
               System.out.println("");
@@ -967,6 +981,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -991,7 +1006,7 @@ public class App3{
             System.out.println("Se realizaran los calculos de un tronco piramide");
             System.out.println("");
 
-            while(intentos<intentoMaximo){
+            while(intentos<=intentoMaximo){
             System.out.println("Se calculara el area lateral del tronco de una piramide ");
 
             System.out.println("");
@@ -1059,6 +1074,7 @@ public class App3{
                 if(intentos <3){
 
                     System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
                 }
               }
               intentos++;
@@ -1098,6 +1114,6 @@ public class App3{
                 
             
                 
-            
+             
         
 

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App3",
+            "request": "launch",
+            "mainClass": "App3",
+            "projectName": "CuerposGeometricosProgSecuencial-2_8152375f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
