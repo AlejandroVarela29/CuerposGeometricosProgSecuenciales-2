@@ -16,17 +16,18 @@ public class App3{
         System.out.println("3)Dodecaedro");
         System.out.println("4)Esfera");
         System.out.println("5)Zona Esferica");
-        System.out.println("6)Huso Esferico");
-        System.out.println("7)Hexaedro");
-        System.out.println("8)Icosaedro");
-        System.out.println("9)Octoaedro");
-        System.out.println("10)Ortoaedro");
-        System.out.println("11)Piramide");
-        System.out.println("12)Prismas");
-        System.out.println("13)Tetaedro");
-        System.out.println("14)Tronco Cono");
-        System.out.println("15)Tronco Piramide");
-        System.out.println("16)Salir del programa");
+        System.out.println("6)Casquete Esferico");
+        System.out.println("7)Huso Esferico");
+        System.out.println("8)Hexaedro");
+        System.out.println("9)Icosaedro");
+        System.out.println("10)Octoaedro");
+        System.out.println("11)Ortoaedro");
+        System.out.println("12)Piramide");
+        System.out.println("13)Prismas");
+        System.out.println("14)Tetaedro");
+        System.out.println("15)Tronco Cono");
+        System.out.println("16)Tronco Piramide");
+        System.out.println("17)Salir del programa");
 
         elegir=menu.nextByte();
 
@@ -304,7 +305,7 @@ public class App3{
             }
               
 
-                break;
+              break;
 
             case 5:
 
@@ -334,20 +335,6 @@ public class App3{
     
             volumenZonaEsferica = ( Math.PI * altura * (Math.pow(altura, 2) * (3 * Math.pow(radioMayor, 2)) * (3 * Math.pow(radioMayor,2)))) / 6 ;
     
-            System.out.println("");
-    
-            System.out.println("Se calculara el volumen de el casquete esferico");
-            System.out.println("Para ello se necesita el radio mayor y la altura ");
-    
-            System.out.println("Cual es el radio");
-            radioMayor=menu.nextDouble();
-    
-            System.out.println("Cual es la altura");
-            altura=menu.nextDouble();
-    
-            volumenCasqueteEsferico = (Math.PI * altura * ((3 * radioMayor) - altura)) / 3;
-
-
             if(radio>=0 && altura>=0 ){
                 break;
               }else{
@@ -378,6 +365,46 @@ public class App3{
               break;
 
               case 6:
+
+                System.out.println("Se realizara los calculos de una esfera");
+
+                while(intentos<=intentoMaximo){
+                System.out.println("Se calculara el volumen de el casquete esferico");
+                System.out.println("Para ello se necesita el radio mayor y la altura ");
+    
+                System.out.println("Cual es el radio");
+                radioMayor=menu.nextDouble();
+    
+                System.out.println("Cual es la altura");
+                altura=menu.nextDouble();
+
+                volumenCasqueteEsferico = (Math.PI * altura * ((3 * radioMayor) - altura)) / 3;
+
+                if(radioMayor>=0 && altura>=0 ){
+                break;
+              }else{
+                System.out.println("No se puede ingresar valores negativos");
+                System.out.println("");
+                if(intentos <3){
+
+                    System.out.println("Intentelo nuevamente");
+                    System.out.println("Le quedan " + (intentoMaximo - intentos) + " Intentos");
+                }
+              }
+               intentos++;
+            }
+
+               if(intentos == intentoMaximo){
+                
+              System.out.println("Ah utilizado todos sus intentos");
+              }else{
+
+            
+             System.out.println("El volumen del casuqete esferico es " + volumenCasqueteEsferico);
+            }
+                break;
+
+              case 7:
 
               System.out.println("Se realizaran los calculos de ua parte de la esfera");
               System.out.println("");
@@ -436,7 +463,7 @@ public class App3{
 
                 break;
 
-            case 7:
+            case 8:
 
               System.out.println("Se realizaran los calculos de un hexaedro");
               System.out.println("");
@@ -499,7 +526,7 @@ public class App3{
 
               break;
 
-              case 8:
+              case 9:
 
               System.out.println("Se realizaran los calculos de un icosaedro");
               System.out.println("");
@@ -551,7 +578,7 @@ public class App3{
 
                 break;
 
-            case 9:
+            case 10:
 
               System.out.println("Se realizara los calculos de un octoaedro");
               System.out.println("");
@@ -600,7 +627,7 @@ public class App3{
             }
               break;
 
-              case 10:
+              case 11:
 
               System.out.println("Se realizaran los calculos de un ortoaedro");
               System.out.println("");
@@ -688,7 +715,7 @@ public class App3{
 
                 break;
 
-            case 11:
+            case 12:
 
               System.out.println("Se realizara los calculos de una piramide"); 
               System.out.println(""); 
@@ -770,7 +797,7 @@ public class App3{
 
               break;
 
-            case 12:
+            case 13:
 
               System.out.println("Se realizaran los calculos de un prisma");
               System.out.println("");
@@ -851,7 +878,7 @@ public class App3{
 
               break;
 
-            case 13:
+            case 14:
 
               System.out.println("Se realizaran los calculos de un tetraedro");
               System.out.println("");
@@ -916,7 +943,7 @@ public class App3{
             }
             break;
 
-            case 14:
+            case 15:
 
               System.out.println("Se realizaran los calculos de un tronco Cono");
               System.out.println("");
@@ -1001,7 +1028,7 @@ public class App3{
               
              break;
 
-            case 15:
+            case 16:
 
             System.out.println("Se realizaran los calculos de un tronco piramide");
             System.out.println("");
@@ -1093,7 +1120,7 @@ public class App3{
             }
               break;
 
-            case 16 :
+            case 17 :
 
               System.out.println("Saliendo del programa");
 
